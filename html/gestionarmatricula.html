@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo3.css">
+    <script src="../js/gestionarmatricula.js"></script>
+    <script src="../js/gestionarestudiantes.js"></script>
+    <script src="../js/gestionarprogramas.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Registrar Matrícula</h1>
+
+        <form id="matricula-form">
+
+            <div class="form-group">
+
+                <label for="matricula-id">Identificación de Matrícula:</label>
+                <input type="text" id="matricula-id" name="matricula-id" required>
+
+            </div>
+            <div class="form-group">
+
+                <label for="estudiante-id">Identificación del Estudiante:</label>
+                <select id="estudiante-id" name="estudiante-id" required>
+
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="programa-id">Código del Programa:</label>
+                <select id="programa-id" name="programa-id" required>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="fecha-matricula">Fecha de Matrícula:</label>
+                <input type="date" id="fecha-matricula" name="fecha-matricula" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="estado">Estado de la Matrícula:</label>
+                <select id="estado" name="estado" required>
+                    <option value="activa">Activa</option>
+                    <option value="en proceso">En proceso</option>
+                    <option value="finalizada">Finalizada</option>
+                    <option value="cancelada">Cancelada</option>
+                </select>
+
+            </div>
+
+            <button type="submit" class="btn-submit">Registrar Matrícula</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

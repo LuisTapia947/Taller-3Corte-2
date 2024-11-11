@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula Academica</title>
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <script src="../js/estudiante.js"></script>
+    <script src="../js/utilidades.js"></script>
+    <script src="../js/gestionarestudiantes.js"></script>
+    <style>
+        body {
+            background-color: rgb(76, 120, 185);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Contenedorform">
+
+        <h1>Registro de datos</h1>
+        <form>
+            <div class="FormGroup">
+                <label>Identificacion</label>
+                <input type="text" id="Identificacion" pattern="^[a-zA-Z0-9]+$" required><br>
+
+                <label>Nombres</label>
+                <input type="text" id="Nombres" pattern="^[a-zA-Z]+$"><br>
+                <label>Apellidos</label>
+                <input type="text" id="Apellidos" pattern="^[a-zA-Z]+$"><br>
+                <label>Fecha de nacimiento</label>
+                <input type="date" id="FechaNacimiento"><br>
+                <label>Correo</label>
+                <input type="email" id="email" name="email" pattern="^[a-zA-Z]+@cecar\.edu\.co$"
+                    placeholder="TuCorreo@cecar.edu.co"  max=" date(2024-11-10); ?>">
+            </div>
+
+
+           
+        </form>
+        <button onclick="guardar()">Guardar</button>
+        <button onclick="actualizar()">Actualizar</button>
+        <button onclick="eliminar()">Eliminar</button>
+        <button onclick="consultar()">Consultar</button>
+        
+    </div>
+</body>
+
+</html>
